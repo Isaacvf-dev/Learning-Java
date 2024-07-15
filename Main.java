@@ -1,17 +1,17 @@
 package curso_java;
-
+import java.util.Scanner;
 
 public class Main {
 
 	public static void main(String[] args) {
-		int a, b;
-		double resultado;
-		a = 5;
-		b = 2;
+		Scanner sc = new Scanner(System.in);
 		
-		resultado = (double) a / b;
-		System.out.println(resultado);
+		String x;
+		x = sc.next();
+		System.out.println("Voce digitou: " + x);
 		
+		
+		sc.close();
 	}
 
 }
