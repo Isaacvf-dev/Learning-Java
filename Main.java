@@ -7,14 +7,12 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
-		double x;
+		char x;
 		
-		x = sc.nextDouble();
-		System.out.printf("Voce digitou: %.2f%n", x);
-		
-		Locale.setDefault(Locale.US);
+		x = sc.next().charAt(0);
 		System.out.println("Voce digitou: " + x);
 		
+			
 		
 		sc.close();
 	}
