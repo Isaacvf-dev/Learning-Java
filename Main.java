@@ -8,19 +8,35 @@ public class Main {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int N = sc.nextInt();
+		System.out.println("Enter three numbers: ");
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		int c = sc.nextInt();
 		
-		int sum = 0;
+		int higher = max(a, b, c);		
 		
-		for (int i=0; i<N; i++) {
-			int x = sc.nextInt();
-			sum += x;
-		}
-		
-		System.out.println(sum);
+		showResult(higher);
 		
 		
 		sc.close();
+	}
+	
+	public static int max(int x, int y, int z) {
+		int aux;
+		if ( x > y && x > z) {
+			aux = x;
+		}
+		else if ( y > z) {
+			aux = y;
+		}
+		else {
+			aux = z;
+		}
+		return aux;
+	};
+	
+	public static void showResult( int value) {
+		System.out.println("Higher: " + value);
 	}
 
 }
