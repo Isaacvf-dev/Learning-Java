@@ -8,12 +8,13 @@ public class Main {
 		
 		Scanner sc = new Scanner(System.in);
 		
-		int x = sc.nextInt();
+		int N = sc.nextInt();
+		
 		int sum = 0;
 		
-		while ( x != 0 ) {
-			sum = sum + x; // sum += x;
-			x = sc.nextInt();
+		for (int i=0; i<N; i++) {
+			int x = sc.nextInt();
+			sum += x;
 		}
 		
 		System.out.println(sum);
