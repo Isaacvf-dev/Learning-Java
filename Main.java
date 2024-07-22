@@ -3,7 +3,11 @@ package curso_java;
 import java.util.Locale;
 import java.util.Scanner;
 
+<<<<<<< Updated upstream
 import entities.Triangle;
+=======
+import entities.Product;
+>>>>>>> Stashed changes
 
 public class Main {
 
@@ -11,6 +15,7 @@ public class Main {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
+<<<<<<< Updated upstream
 		Triangle x, y;
 		x = new Triangle();
 		y = new Triangle();
@@ -37,6 +42,21 @@ public class Main {
 		System.out.println(largerArea);
 		
 	    sc.close();
+=======
+		Product product = new Product();
+		
+		System.out.println("Enter product data: ");
+		System.out.println("Name: ");
+		product.name = sc.nextLine();
+		System.out.println("Price: ");
+		product.price = sc.nextDouble();
+		System.out.println("Quantity in stock: ");
+		product.quantity = sc.nextInt();
+		
+		System.out.println(product);
+		
+		sc.close();
+>>>>>>> Stashed changes
 	}
 
 }
